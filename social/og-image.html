@@ -1,0 +1,59 @@
+<!doctype html>
+<!--
+  Source for EA Dojo's social preview image (og-image.png, 1200x630), the
+  card shown when an ea-dojo.com link is shared. To re-export after editing,
+  open this file in Chromium at a 1200x630 viewport and screenshot it, e.g.:
+    npx playwright screenshot --viewport-size=1200,630 social/og-image.html social/og-image.png
+  then copy og-image.png to the main repo's public/ folder.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,500&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; }
+  body {
+    position: relative; overflow: hidden; background: #ffffff; color: #12182b;
+    font-family: 'IBM Plex Sans', sans-serif; padding: 72px 80px;
+    border-bottom: 14px solid #c2410c;
+  }
+  .watermark {
+    position: absolute; right: -20px; top: -70px; font-family: 'Newsreader', serif;
+    font-size: 440px; font-weight: 500; line-height: 1; color: #f7f8fa; letter-spacing: -0.04em;
+  }
+  .brand { position: relative; display: flex; align-items: center; gap: 18px; }
+  .tile {
+    width: 64px; height: 64px; border-radius: 12px; background: #1c2f57; color: #fff;
+    display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 26px;
+    transform: rotate(-3deg);
+  }
+  .name { font-family: 'Newsreader', serif; font-style: italic; font-size: 38px; font-weight: 500; }
+  h1 {
+    position: relative; margin-top: 64px; max-width: 900px; font-family: 'Newsreader', serif;
+    font-weight: 500; font-size: 72px; line-height: 1.05; letter-spacing: -0.02em;
+  }
+  h1 em { color: #1c2f57; }
+  .facts {
+    position: relative; margin-top: 44px; display: flex; gap: 14px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 22px; font-weight: 500; color: #5f6b7a;
+  }
+  .facts span { border: 2px solid #e6e9ef; border-radius: 999px; padding: 10px 22px; }
+  .facts span:first-child { border-color: #c2410c; color: #c2410c; }
+  .site { position: absolute; left: 80px; bottom: 58px; font-size: 24px; color: #5f6b7a; }
+  .site strong { color: #12182b; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="watermark" aria-hidden="true">EA</div>
+  <div class="brand"><div class="tile">EA</div><div class="name">EA Dojo</div></div>
+  <h1>Drive Enterprise Architecture, <em>with tools and without.</em></h1>
+  <div class="facts">
+    <span>Module 1 free</span>
+    <span>7 modules</span>
+    <span>24 scenarios</span>
+    <span>7 industries</span>
+  </div>
+  <div class="site"><strong>ea-dojo.com</strong> · Enterprise architecture training</div>
+</body>
+</html>
