@@ -79,6 +79,16 @@
   section.band h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); line-height: 1.12; max-width: 44rem; }
   .alt { background: var(--paper); }
 
+  /* EA in Real Time strip (moved out of the hero) */
+  .rt { border-bottom: 1px solid var(--ink-800); }
+  .rt .wrap { gap: 16px; }
+  .rt-strip { display:grid; gap: 28px; background: var(--ink-900); border: 1px solid var(--ink-800); padding: 28px; align-items: center; }
+  @media (min-width: 900px){ .rt-strip { grid-template-columns: 1fr 1fr; padding: 40px; gap: 48px; } }
+  .rt-copy { display:grid; gap: 14px; }
+  .rt-copy h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); }
+  .chips { list-style: none; margin: 0; padding: 0; display:flex; flex-wrap: wrap; gap: 10px; }
+  .chips li { font-family: var(--mono); font-size: 13px; border: 1px solid var(--ink-700); background: var(--ink-950); border-radius: 999px; padding: 8px 14px; }
+
   /* Pose sheet */
   .poses { display:grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
   @media (min-width: 820px){ .poses { grid-template-columns: repeat(4, 1fr); } }
@@ -151,6 +161,23 @@
         <a href="#ask">Try your first case with me →</a>
       </div>
       <div class="hero-sensei" data-pose="welcome" aria-label="The EA Dojo sensei, hands clasped, greeting you"></div>
+    </div>
+  </div>
+</section>
+
+<section class="band rt">
+  <div class="wrap">
+    <p class="muted">Moved from the hero: the EA in Real Time card becomes its own strip, straight after "The judgment gap".</p>
+    <div class="rt-strip">
+      <div class="rt-copy">
+        <p class="eyebrow">EA in Real Time</p>
+        <h2>25 judgment calls, 7 industries</h2>
+        <p class="lede">Standalone situations, no fixed order and no single right answer. Pick an industry you know and see how your call holds up.</p>
+        <a class="btn btn-flame" href="#ask" style="justify-self:start">Try one free →</a>
+      </div>
+      <ul class="chips">
+        <li>FMCG</li><li>Retail &amp; E-commerce</li><li>Oil &amp; Gas</li><li>Banking &amp; Financial Services</li><li>Technology firms</li><li>Telecom</li><li>Healthcare</li>
+      </ul>
     </div>
   </div>
 </section>
