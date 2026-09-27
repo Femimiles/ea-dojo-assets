@@ -9,6 +9,8 @@ so they can be edited and re-exported without touching application code.
 | --- | --- | --- |
 | `social/og-image.html` | Source for the social preview card (1200×630) | — |
 | `social/og-image.png` | Exported card shown when an ea-dojo.com link is shared | `public/og-image.png` in Femimiles/howtoenterprisearchitecture |
+| `sensei/sensei-mockup.html` | Design mockup of the EA Dojo sensei: four poses and where he appears on the site | — |
+| `sensei/poses/*.svg` | The sensei's poses (welcome, teach, think, bow) and head avatars as standalone SVGs | Source for `src/components/Sensei.tsx` (planned) |
 
 ## Updating the social preview
 
